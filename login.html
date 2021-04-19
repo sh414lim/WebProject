@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>페이지 제작</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <ul class="sidemenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <ul class="leftMenu">
+          <li class="active"><a href="index.html">Phone</a></li>
+          <li class="dropBox">
+            <a href="galary.html">Apple</a>
+            <span class="dropmenu">
+              <span><a href="#">MAC</a></span>
+              <span><a href="#">IPHONE</a></span>
+            </span>
+          </li>
+
+          <li class="dropBox">
+            <a href="board.html">Galaxy</a>
+            <span class="dropmenu">
+              <span><a href="#">GalaxyS</a></span>
+              <span><a href="#">Galaxy Note</a></span>
+            </span>
+          </li>
+          <li class="dropBox">
+            <a href="Lg.html">LG</a>
+            <span class="dropmenu"> </span>
+          </li>
+          <li><a href="#">고객센터</a></li>
+
+          <li class="dropBox">
+            <a href="login.html">Login</a>
+            <span class="dropmenu">
+              <span> <a href="join.html">회원가입</a></span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome</h1>
+    </header>
+    <form action="friends.html" method="GET" id="login-form">
+      <input name="username" type="text" placeholder="Email or Phone Number" />
+      <input name="password" type="password" placeholder="Pass" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find E-mail or Password</a>
+    </form>
+  </body>
+</html>

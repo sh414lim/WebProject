@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>페이지 제작</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <ul class="sidemenu">
+            <li><a href="index.html">Home</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <ul class="leftMenu">
+          <li class="active"><a href="index.html">Phone</a></li>
+          <li class="dropBox">
+            <a href="galary.html">Apple</a>
+            <span class="dropmenu">
+              <span><a href="#">MAC</a></span>
+              <span><a href="#">IPHONE</a></span>
+            </span>
+          </li>
+
+          <li class="dropBox">
+            <a href="board.html">Galaxy</a>
+            <span class="dropmenu">
+              <span><a href="#">GalaxyS</a></span>
+              <span><a href="#">Galaxy Note</a></span>
+            </span>
+          </li>
+          <li class="dropBox">
+            <a href="Lg.html">LG</a>
+            <span class="dropmenu"> </span>
+          </li>
+          <li><a href="#">고객센터</a></li>
+
+          <li class="dropBox">
+            <a href="login.html">Login</a>
+            <span class="dropmenu">
+              <span> <a href="join.html">회원가입</a></span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="section3">
+      <div class="container">
+        <h1>Apple</h1>
+        
+        <div class="box">
+            <div class="image_box">
+              <img src="014afee4-4bf6-4bf8-946f-06edbf3b68d5i.jpg" alt="" onclick="showDivs(1)" />
+            </div>
+            <div class="des">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptates, nam.
+            </div>
+          </div>
+          <div class="box">
+            <div class="image_box">
+              <img src="ipnone.jpg" alt="" onclick="showDivs(1)" />
+            </div>
+            <div class="des">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptates, nam.
+            </div>
+          </div>
+          <div class="box">
+            <div class="image_box">
+              <img src="014afee4-4bf6-4bf8-946f-06edbf3b68d5i.jpg" alt="" onclick="showDivs(1)" />
+            </div>
+            <div class="des">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptates, nam.
+            </div>
+          </div>
+        <div class="box">
+          <div class="image_box">
+            <img src="ipnone.jpg" alt="" onclick="showDivs(1)" />
+          </div>
+          <div class="des">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptates, nam.
+          </div>
+        </div>
+        <div class="box">
+          <div class="image_box">
+            <img
+              src="014afee4-4bf6-4bf8-946f-06edbf3b68d5i.jpg"
+              alt=""
+              onclick="showDivs(2)"
+            />
+          </div>
+          <div class="des">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
+            numquam.
+          </div>
+        </div>
+      
+        
+    </section>
+    <div class="clear"></div>
+
+    <div id="back"></div>
+    <div id="popup">
+      <div class="title">
+        SandArt Popup <span class="close" onclick="closePopup()">&times;</span>
+      </div>
+      <div align="center" class="large">
+        <div class="small">
+          <img class="mySlides" src="ipnone.jpg" />
+          <img class="mySlides" src="014afee4-4bf6-4bf8-946f-06edbf3b68d5i.jpg" />
+
+          <a class="leftbtn" onclick="plusDivs(-1)">◀</a>
+          <a class="rightbtn" onclick="plusDivs(1)">▶</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <div class="top">
+          <div class="container">
+            <span>개인허가</span>
+            <span>사업자등록</span>
+            <span>무단복제신고</span>
+          </div>
+        </div>
+        <div class="container">
+          <strong>
+            Home : Location Log : Tag Log : Media Log : Guestbook : Admin : New
+            Post
+          </strong>
+          <div class="copyright">
+              phone:010-123-456 
+          </div>
+        </div>
+      </footer>
+  
+
+    <script>
+      var slideIndex = 0;
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+      function showDivs(n) {
+        var i;
+        slideIndex = n;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+        document.getElementById("back").style.display = "block";
+        document.getElementById("popup").style.display = "block";
+      }
+
+      function closePopup() {
+        document.getElementById("back").style.display = "none";
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
