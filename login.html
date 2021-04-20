@@ -52,12 +52,21 @@
 
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcome</h1>
+
+      <form action="friends.html" method="GET" id="login-form">
+        <input
+          name="username"
+          type="text"
+          placeholder="Email or Phone Number"
+        />
+        <input name="password" type="password" placeholder="Pass" />
+        <div>
+          <input type="submit" value="Log In" />
+        </div>
+        <div>
+          <a href="#">Find E-mail or Password</a>
+        </div>
+      </form>
     </header>
-    <form action="friends.html" method="GET" id="login-form">
-      <input name="username" type="text" placeholder="Email or Phone Number" />
-      <input name="password" type="password" placeholder="Pass" />
-      <input type="submit" value="Log In" />
-      <a href="#">Find E-mail or Password</a>
-    </form>
   </body>
 </html>
